@@ -84,11 +84,11 @@ int print_unsigned(va_list ap, params_t *params);
 int print_address(va_list ap, params_t *params);
 
 /* specifier.c module */
-int (*get_specifier(char *s))(va_list ap, params_t *params);
-int get_print_func(char *s, va_list ap, params_t *params);
-int get_flag(char *s, params_t *params);
-int get_modifier(char *s, params_t *params);
-char *get_width(char *s, params_t *params, va_list ap);
+int (*get_specifier(char *str))(va_list ap, params_t *params);
+int get_print_func(char *str, va_list ap, params_t *params);
+int get_flag(char *str, params_t *params);
+int get_modifier(char *str, params_t *params);
+char *get_width(char *str, params_t *params, va_list ap);
 
 /* convert_number.c module */
 int print_hex(va_list ap, params_t *params);
